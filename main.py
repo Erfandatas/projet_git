@@ -9,11 +9,11 @@ class Graph:
         self.graph[u].append(v)
  
 
-    def __dfs_util(self, v, visited):
+def __dfs_util(self, v, visited):
     visited.add(v)
     for nb in self.graph[v]:
         if nb not in visited:
-            self.__dfs_util(nb, visited)            
+            self.__dfs_util(nb, visited)    
 
     def dfs(self, v):
         visited = set()
